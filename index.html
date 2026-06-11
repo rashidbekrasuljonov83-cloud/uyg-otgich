@@ -12,12 +12,33 @@
 
       <div class="current-time" id="clock">00:00:00</div>
 
-      <div class="input-group">
-        <input type="number" id="input" placeholder="HH:MM" />
+      <div class="box">
+        <h2>Taymer o'rnatish</h2>
+        <input
+          class="input1"
+          type="number"
+          id="enter_minutes"
+          min="1"
+          max="60"
+          value="5"
+        />
+        <h5>daqiqa</h5>
+        <br /><br />
+      </div>
+      <div>
+        <h3>Teskari hisob:</h3>
+        <div id="taymer-ekrani" class="vaqt">00:00</div>
       </div>
 
-      <button class="alarm-btn">boshlash</button>
-
+      <audio
+        id="signal-tovushi"
+        src="./audio/audio_2026-06-11_23-15-12.ogg"
+        preload="auto"
+      ></audio>
+      <button class="alarm-btn" onclick="vaqtniBoshlash()">boshlash</button>
+      <button class="alarm-btn2" onclick="vaqtniBekorQilish()">
+        Bekor qilish
+      </button>
       <div class="status-text"></div>
       <script src="./js/main.js "></script>
     </div>

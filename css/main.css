@@ -1,10 +1,12 @@
-/* Umumiy sozlamalar va chiroyli gradient fon */
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
   background: linear-gradient(135deg, #0f172a, #1e1b4b, #311042);
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -24,14 +26,30 @@ body {
 
 h2 {
   margin-top: 0;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 600;
   letter-spacing: 1px;
+  margin: 0 auto;
   background: linear-gradient(#60a5fa, #a78bfa);
-
+  width: 250px;
+  text-align: center;
+  padding: 0.8rem 2rem;
+  border-radius: 20px;
   margin-bottom: 1.5rem;
+  width: 93%;
 }
-
+h5 {
+  margin-top: 25px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  background: linear-gradient(#60a5fa, #a78bfa);
+  width: 150px;
+  text-align: center;
+  border-radius: 12px;
+  padding: 0.4rem 1rem;
+}
 .current-time {
   font-size: 2.5rem;
   font-weight: 700;
@@ -55,6 +73,10 @@ input[type="time"] {
   text-align: center;
   transition: all 0.3s ease;
 }
+.input1 {
+  width: 100px;
+  margin-bottom: 20px;
+}
 
 input {
   cursor: pointer;
@@ -67,6 +89,7 @@ input[type="time"]:focus {
 }
 
 .alarm-btn {
+  margin-top: 20px;
   background: rgba(167, 139, 250, 0.1);
   border: 1px solid rgba(167, 139, 250, 0.4);
   color: #fff;
@@ -80,7 +103,21 @@ input[type="time"]:focus {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-
+.alarm-btn2 {
+  background: rgba(167, 139, 250, 0.1);
+  border: 1px solid rgba(167, 139, 250, 0.4);
+  color: #fff;
+  margin-top: 20px;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 93%;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 .alarm-btn:hover {
   background: rgba(167, 139, 250, 0.3);
   border-color: #a78bfa;
@@ -97,4 +134,29 @@ input[type="time"]:focus {
   font-size: 0.9rem;
   color: #94a3b8;
   min-height: 20px;
+}
+
+@media (max-width: 360px) {
+  .alarm-container {
+    padding: 1.5rem 1rem;
+    border-radius: 16px;
+  }
+  body {
+    padding: 0 20px;
+  }
+  h2 {
+    font-size: 1.1rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .current-time {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .alarm-btn,
+  .alarm-btn2 {
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
+  }
 }
